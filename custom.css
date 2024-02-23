@@ -1,13 +1,14 @@
 html {
-    background: linear-gradient(180deg, rgba(33,25,81,1) 0%, rgba(131,111,255,1) 73%); 
+    background: linear-gradient(180deg, rgba(208, 162, 247, 1) 0%, rgba(220, 191, 255, 1) 89%), url(dither.jpg);
     font-family: Raleway;
-    height: 100%;
+    height: calc(100vw - 10px);
+    background-blend-mode: multiply;
+    background-repeat: repeat-x;
 }
 
 .title {
-    margin: 1em;
-    padding: 2em;
-    background-color: aquamarine;
+    font-family: 'Jacquarda Bastarda 9';
+    font-size: 3em;
 }
 
 .imagen-banner {
@@ -18,7 +19,7 @@ html {
 
 .content {
     width: calc(100% - 20px);
-    padding:0px;
+    padding: 0px;
 }
 
 .banner {
@@ -26,7 +27,7 @@ html {
     width: 100%;
     margin: 0px;
     height: 8em;
-    background-color: #15F5BA;
+    background-color: #E5D4FF;
     border-radius: 1em 1em 0 0;
 }
 
@@ -46,7 +47,7 @@ html {
 }
 
 .extra-info {
-    background-color: coral;
+    background-color: #E5D4FF;
     padding: 1em;
     margin: 1em auto 1em auto;
     width: 24%;
@@ -66,6 +67,13 @@ html {
     font-weight: bold;
 }
 
+.footer {
+    background-color: #E5D4FF;
+    width: calc(95% - 5px);
+    padding: 2em;
+    border-radius: 1em;
+}
+
 @media (max-width: 480px) {
     .imagen-banner {
         width: 100%;
@@ -78,7 +86,21 @@ html {
 
 @font-face {
     font-family: 'Raleway';
-    src:url(fonts/Raleway.ttf);
-    font-weight:normal;
-    font-style:normal;
-  }
+    src: url(fonts/Raleway.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url(fonts/IndieFlower-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jacquarda Bastarda 9';
+    src: url(fonts/JacquardaBastarda9-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
