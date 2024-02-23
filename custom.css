@@ -1,0 +1,84 @@
+html {
+    background: linear-gradient(180deg, rgba(33,25,81,1) 0%, rgba(131,111,255,1) 73%); 
+    font-family: Raleway;
+    height: 100%;
+}
+
+.title {
+    margin: 1em;
+    padding: 2em;
+    background-color: aquamarine;
+}
+
+.imagen-banner {
+    margin: 1em;
+    padding: 2em;
+    background-color: pink;
+}
+
+.content {
+    width: calc(100% - 20px);
+    padding:0px;
+}
+
+.banner {
+    display: inline-flex;
+    width: 100%;
+    margin: 0px;
+    height: 8em;
+    background-color: #15F5BA;
+    border-radius: 1em 1em 0 0;
+}
+
+.content-body {
+    display: inline-flex;
+    width: 100%;
+    padding: 1em;
+}
+
+.entry-section {
+    background-color: #F0F3FF;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em auto 1em auto;
+    margin: auto;
+    width: 62%;
+}
+
+.extra-info {
+    background-color: coral;
+    padding: 1em;
+    margin: 1em auto 1em auto;
+    width: 24%;
+    height: 30px;
+}
+
+.entry {
+    padding: 5px;
+}
+
+.entry-text {
+    color: #1f1f1f;
+}
+
+.date-entry {
+    color: grey;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .imagen-banner {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:url(fonts/Raleway.ttf);
+    font-weight:normal;
+    font-style:normal;
+  }
