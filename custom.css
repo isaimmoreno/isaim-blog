@@ -49,6 +49,8 @@ body {
 }
 
 .news-title {
+    font-size: 2em;
+    padding: 0.5em;
     margin-right: auto;
     margin-left: auto;
 }
