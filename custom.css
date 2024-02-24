@@ -1,20 +1,21 @@
-html {
-    background: linear-gradient(180deg, rgba(208, 162, 247, 1) 0%, rgba(220, 191, 255, 1) 89%), url(dither.jpg);
-    font-family: Raleway;
-    height: calc(100vw - 10px);
+body {
+    background: linear-gradient(180deg, rgba(181,192,208,1) 0%, rgba(204,211,202,1) 89%), url(images/dither.jpg);
     background-blend-mode: multiply;
     background-repeat: repeat-x;
+    font-family: 'Saira';
+    height: 100%;
 }
 
 .title {
     font-family: 'Jacquarda Bastarda 9';
     font-size: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.imagen-banner {
+.imagen {
     margin: 1em;
-    padding: 2em;
-    background-color: pink;
+    border-radius: 50%;
 }
 
 .content {
@@ -24,11 +25,12 @@ html {
 
 .banner {
     display: inline-flex;
+    box-shadow: 14px 15px 8px -4px rgba(0,0,0,0.43);
     width: 100%;
     margin: 0px;
     height: 8em;
-    background-color: #E5D4FF;
-    border-radius: 1em 1em 0 0;
+    background-color: #F5E8DD;
+    border-radius: 1em;
 }
 
 .content-body {
@@ -38,20 +40,35 @@ html {
 }
 
 .entry-section {
-    background-color: #F0F3FF;
+    background-color: #EED3D9;
+    box-shadow: 14px 15px 8px -4px rgba(0,0,0,0.43);
     border-radius: 0.5em;
     padding: 1em;
-    margin: 1em auto 1em auto;
-    margin: auto;
+    margin: 1em;
     width: 62%;
 }
 
+.news-title {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .extra-info {
-    background-color: #E5D4FF;
+    background-color: #F5E8DD;
     padding: 1em;
     margin: 1em auto 1em auto;
     width: 24%;
-    height: 30px;
+    min-height: 1%;
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: 14px 15px 8px -4px rgba(0,0,0,0.43);
+}
+
+.news-list span{
+    color:rgb(37, 37, 37);
+    background-color: #E5D4FF;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .entry {
@@ -60,6 +77,9 @@ html {
 
 .entry-text {
     color: #1f1f1f;
+    border-bottom: 5px solid #b3a9a9f1;
+    padding-bottom: 2em;
+    border-radius: 5px;
 }
 
 .date-entry {
@@ -72,7 +92,20 @@ html {
     width: calc(95% - 5px);
     padding: 2em;
     border-radius: 1em;
+    box-shadow: 14px 15px 8px -4px rgba(0,0,0,0.43);
 }
+
+.entry-text img {
+    min-height: 20em;
+    max-width: calc(80% - 10px);
+    display: block;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 14px 15px 8px -4px rgba(181,192,208,1);
+}
+
+
 
 @media (max-width: 480px) {
     .imagen-banner {
@@ -87,6 +120,13 @@ html {
 @font-face {
     font-family: 'Raleway';
     src: url(fonts/Raleway.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: url(fonts/Saira.ttf);
     font-weight: normal;
     font-style: normal;
 }
